@@ -1,0 +1,26 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header
+{
+    width: 100%;
+    background-color: aqua;
+}
+
+main
+{
+    width: 80%;
+    background-color: blue;
+}
+
+footer
+{
+    width: 100%;
+    background-color: blueviolet;
+}
+
