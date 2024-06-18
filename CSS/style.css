@@ -1,15 +1,38 @@
 body
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
 }
 
 header
 {
-    width: 100%;
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkslategray;
+    height: 70px;
+}
+
+header>nav>ul {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+header>nav>ul>li>a
+{
+    color: white;
+    text-decoration: none;
+    
+}
+
+header>nav {
+    gap: 4em;
+    text-align: center;
+    margin: auto;
 }
 
 main
