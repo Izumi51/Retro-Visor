@@ -1,49 +1,136 @@
-body
+:root
 {
-    display: grid;
+    /*------background colors------*/
+    --orange: #ff9900;
+    --dark-orange: #ff4000;
+    --white: #ffffff;
+    --green: #24b41b;
+    --black: #000000;
+    --lime: #8ebe00;
+
+    /*------font size------*/
+    --large: 2rem;
+    --medium: 1.5rem;
+    --small: 1.2rem;
 }
 
-header
+/*------BODY------*/
+body
 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------HEADER------*/
+#HeaderPag
+{
+    background-color: var(--orange);
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: darkslategray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#HeaderPag img
+{
     height: 70px;
 }
 
-header>nav>ul {
-    list-style: none;
-    text-align: center;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 4em;
-}
-
-header>nav>ul>li>a
+#Nav__list
 {
-    color: white;
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+#Nav__list a
+{
     text-decoration: none;
-    
+    color: var(--black);
+    font-size: 1.2rem
 }
 
-header>nav {
-    gap: 4em;
-    text-align: center;
-    margin: auto;
+#Nav__list a:hover
+{
+    color: var(--white);
 }
 
+/*------MAIN------*/
 main
 {
-    width: 80%;
-    background-color: blue;
+    max-width: 1000px;
+    margin: auto;
 }
 
-footer
+/*------artigos------*/
+.info-articles
 {
-    width: 100%;
-    background-color: blueviolet;
+    margin-top: 50px;
 }
+
+.info-articles > h1
+{
+    margin: 10px;
+    font-size: var(--large);
+}
+
+.info-articles__topic > h2
+{
+    margin: 15px;
+    font-size: var(--medium);
+}
+
+.info-articles > div
+{
+    width: 500px;
+    margin: 1em auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+    
+.info-articles > div > video
+{
+    width: 500px; 
+    height: 300px;
+}
+
+.info-articles__topic > img
+{
+    height: 250px;
+    float: left;
+    padding: 20px;
+}
+
+.topic__paragraph
+{
+    font-size: var(--small);
+    padding-left: 20px;
+}
+
+.topic__paragraph > strong
+{
+    color: var(--dark-orange);
+}
+
+#topic__list
+{
+    font-size: var(--small);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+    
+#topic__list > li 
+{
+    margin: 30px;
+    list-style: decimal;
+}
+
+#topic__list > li > strong 
+{
+    color: var(--dark-orange);
+}
+/*------quiz------*/
+
+
+/*------FOOTER------*/
 
