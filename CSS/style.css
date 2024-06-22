@@ -4,14 +4,14 @@
     --orange: #ff9900;
     --dark-orange: #ff4000;
     --white: #ffffff;
-    --green: #24b41b;
     --black: #000000;
-    --lime: #8ebe00;
+    --black-blue: #141a22;
+    --purple-blue: #1C0E42;
 
     /*------font size------*/
-    --large: 2rem;
-    --medium: 1.5rem;
-    --small: 1.2rem;
+    --large: 1.8rem;
+    --medium: 1.3rem;
+    --small: 1.1rem;
 }
 
 /*------BODY------*/
@@ -23,7 +23,7 @@ body
 /*------HEADER------*/
 #HeaderPag
 {
-    background-color: var(--orange);
+    background-color: var(--dark-orange);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -53,19 +53,26 @@ body
 #Nav__list a:hover
 {
     color: var(--white);
+    font-size: 1.4rem;
 }
 
 /*------MAIN------*/
-main
+
+/*------artigos------*/
+.article-background
+{
+    background-color: #141a22;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.info-articles
 {
     max-width: 1000px;
     margin: auto;
-}
-
-/*------artigos------*/
-.info-articles
-{
-    margin-top: 50px;
 }
 
 .info-articles > h1
@@ -129,7 +136,45 @@ main
 {
     color: var(--dark-orange);
 }
+
 /*------quiz------*/
+#form-box
+{
+    background-color: var(--purple-blue);
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form
+{
+    max-width: 800px;
+    margin: auto;
+    color: var(--white);
+    font-size: var(--small);
+}
+
+fieldset
+{
+    border: 3px solid var(--dark-orange);
+    padding: 35px;
+}
+
+legend
+{
+    background-color: var(--dark-orange);
+    width: 30%;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: var(--large);
+    border-radius: 10px;
+}
+
+.quiz-quest
+{
+    margin-top: 5px;
+}
 
 
 /*------FOOTER------*/
