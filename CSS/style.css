@@ -23,6 +23,7 @@ body
 /*------HEADER------*/
 #HeaderPag
 {
+    font-family: inter;
     background-color: var(--dark-orange);
     display: flex;
     align-items: center;
@@ -31,7 +32,16 @@ body
     padding-bottom: 5px;
 }
 
-#HeaderPag img
+#HeaderPag > section
+{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    color: var(--white);
+    font-size: var(--medium);
+}
+
+#HeaderPag > section img
 {
     height: 70px;
 }
@@ -46,13 +56,13 @@ body
 #Nav__list a
 {
     text-decoration: none;
-    color: var(--black);
-    font-size: 1.2rem
+    color: var(--white);
+    font-size: 1.2rem;
 }
 
 #Nav__list a:hover
 {
-    color: var(--white);
+    color: var(--black-blue);
     font-size: 1.4rem;
 }
 
@@ -73,6 +83,12 @@ body
 {
     max-width: 1000px;
     margin: auto;
+}
+
+.info-articles--margin
+{
+    margin-top: 50px;   
+    margin-bottom: 50px;
 }
 
 .info-articles > h1
@@ -103,7 +119,7 @@ body
 
 .info-articles__topic > img
 {
-    height: 250px;
+    height: 300px;
     float: left;
     padding: 20px;
 }
@@ -112,6 +128,13 @@ body
 {
     font-size: var(--small);
     padding-left: 20px;
+}
+
+#first-topic::first-letter
+{
+    font-size: 70px;
+    float: left;
+    padding-right: 10px;
 }
 
 .topic__paragraph > strong
@@ -135,6 +158,11 @@ body
 #topic__list > li > strong 
 {
     color: var(--dark-orange);
+}
+
+.jogos__img
+{
+    height: 100px;
 }
 
 /*------quiz------*/
@@ -178,4 +206,8 @@ legend
 
 
 /*------FOOTER------*/
-
+footer
+{
+    background-color: var(--purple-blue);
+    height: 100px;
+}
