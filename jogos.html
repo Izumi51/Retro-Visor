@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-jogos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre os jogos</title>
 </head>
-<body>
+<body class="grid-jogos">
     <header id="HeaderPag">
         <section>
             <img src="MIDIA/logo-retro.png" alt="Logo do site">
@@ -23,52 +23,101 @@
     </header>
 
     <main>
-        <section class="info-articles">
-            <h1>Conheça Alguns Jogos</h1>
-            
-            <article class="info-articles__topic" >
-                <h2>Space Invaders</h1>
-                <img src="MIDIA/space-invaders.png" alt="Jogo Space Invaders" class="jogos__img">
-                <p class="topic__paragraph">
-                    Space Invaders, lançado em 1978 pela Taito Corporation e desenvolvido por Tomohiro Nishikado, é um dos jogos mais icônicos e influentes da história dos videogames. Trata-se de um jogo de tiro em que o jogador controla uma nave espacial, movendo-se horizontalmente na parte inferior da tela para destruir ondas de alienígenas que descem lentamente. À medida que os alienígenas são eliminados, sua velocidade aumenta, criando um desafio crescente. O objetivo é eliminar todos os invasores antes que eles atinjam a parte inferior da tela ou destruam a nave do jogador. Space Invaders foi um marco na indústria de jogos, popularizando o gênero de tiro e contribuindo significativamente para a era dourada dos fliperamas. Seu sucesso inspirou inúmeros jogos subsequentes e é lembrado por sua jogabilidade simples, mas viciante, além de sua influência duradoura na cultura dos videogames.
-                </p>
-            </article>
-            
-            <article class="info-articles__topic">
-                <h2>Pacman</h1>
-                <p class="topic__paragraph">
-                    Pac-Man, lançado em 1980 pela Namco e criado por Toru Iwatani, é um dos jogos de arcade mais famosos e influentes de todos os tempos. No jogo, os jogadores controlam Pac-Man, uma figura amarela em forma de pizza, que navega por um labirinto comendo pontos enquanto evita fantasmas coloridos. Os quatro fantasmas – Blinky, Pinky, Inky e Clyde – têm comportamentos distintos, tornando a evasão um desafio estratégico. O objetivo é comer todos os pontos em cada nível sem ser capturado pelos fantasmas. Além dos pontos normais, há pontos maiores, chamados de "power pellets", que permitem a Pac-Man comer os fantasmas temporariamente. Pac-Man foi revolucionário por sua jogabilidade inovadora e acessível, bem como por sua ampla atratividade, transcendo as barreiras de gênero e idade. Seu impacto cultural é vasto, com inúmeros produtos derivados, programas de TV, e continuações de jogos, consolidando Pac-Man como um ícone global dos videogames.
-                </p>
-                <img src="MIDIA/pacman.png" alt="Jogo Pacman" class="jogos__img">
-            </article>
+        <h1>Conheça Alguns Jogos</h1>
+        
+        <article class="game-article">
+            <h2>Space Invaders</h1>
+            <img class="game-img--left" src="MIDIA/space-invaders.png" alt="Jogo Space Invaders" class="jogos__img">
+            <p class="game-article__paragraph">
+                Space Invaders, lançado em <strong>1978</strong> pela <strong>Taito Corporation</strong> e desenvolvido 
+                por <strong>Tomohiro Nishikado</strong>, é um dos jogos mais icônicos e influentes da história dos 
+                videogames. Trata-se de um jogo de tiro em que o jogador controla uma <strong>nave espacial</strong>, 
+                movendo-se horizontalmente na parte inferior da tela para destruir ondas de alienígenas que descem 
+                lentamente. À medida que os alienígenas são eliminados, sua <strong>velocidade aumenta</strong>, criando 
+                um desafio crescente. O objetivo é eliminar todos os invasores antes que eles atinjam a parte inferior 
+                da tela ou destruam a nave do jogador. Space Invaders foi um marco na indústria de jogos, popularizando 
+                o gênero de tiro e contribuindo significativamente para a era <strong>dourada dos fliperamas</strong>. 
+                Seu sucesso inspirou inúmeros jogos subsequentes e é lembrado por sua jogabilidade simples, mas viciante, 
+                além de sua influência duradoura na cultura dos videogames.
+            </p>
+        </article>
 
-            <article class="info-articles__topic">
-                <h2>Bomberman</h1>
-                <p class="topic__paragraph">
-                    Bomberman, criado pela Hudson Soft e lançado em 1983, é um jogo de ação e labirinto que se tornou um clássico dos videogames. O jogador controla o personagem principal, Bomberman, cuja missão é colocar bombas para destruir obstáculos e inimigos dentro de um labirinto, buscando a saída para avançar ao próximo nível. As bombas têm um alcance explosivo específico e, além de eliminar inimigos, podem destruir blocos que frequentemente escondem power-ups. Esses power-ups podem aumentar o poder da explosão, a quantidade de bombas que podem ser colocadas simultaneamente, ou fornecer outras habilidades especiais.
-                    A série Bomberman é conhecida por seu modo multijogador, onde os jogadores competem entre si em arenas cheias de obstáculos e power-ups, adicionando um elemento de estratégia e competição intensa. Com sua jogabilidade simples, mas profundamente estratégica, Bomberman conquistou uma base de fãs dedicada e gerou numerosas sequências e adaptações para diversas plataformas de jogos ao longo das décadas.
-                </p>
-                <img src="MIDIA/bomberman.png" alt="Jogo Bomberman" class="jogos__img">
-            </article>
+        <article class="game-article">
+            <h2>Pacman</h1>
+            <img class="game-img--rigth" src="MIDIA/pacman.png" alt="Jogo Pacman" class="jogos__img">
+            <p class="game-article__paragraph">
+                Pac-Man, lançado em <strong>1980</strong> pela <strong>Namco</strong> e criado por <strong>Toru 
+                Iwatani</strong>, é um dos jogos de arcade mais famosos e influentes de todos os tempos. No jogo, os 
+                jogadores controlam <strong>Pac-Man</strong>, uma figura amarela em forma de pizza, que navega por um 
+                labirinto comendo pontos enquanto evita <strong>fantasmas coloridos</strong>. Os quatro fantasmas 
+                <strong>– Blinky, Pinky, Inky e Clyde –</strong> têm comportamentos distintos, tornando a evasão um 
+                desafio estratégico. O objetivo é comer todos os pontos em cada nível sem ser capturado pelos fantasmas. 
+                Além dos pontos normais, há pontos maiores, chamados de <strong>"power pellets"</strong>, que permitem a 
+                Pac-Man comer os fantasmas temporariamente. Pac-Man foi revolucionário por sua jogabilidade inovadora e 
+                acessível, bem como por sua ampla atratividade, transcendo as barreiras de gênero e idade. Seu impacto 
+                cultural é vasto, com inúmeros produtos derivados, programas de TV, e continuações de jogos, consolidando 
+                Pac-Man como um <strong>ícone global dos videogames</strong>.
+            </p>
+        </article>
 
-            <article class="info-articles__topic">
-                <h2>Tetris</h1>
-                <p class="topic__paragraph">
-                    Tetris, criado pelo engenheiro de software russo Alexey Pajitnov em 1984, é um dos jogos de quebra-cabeça mais famosos e duradouros de todos os tempos. No jogo, peças de formatos variados chamadas "tetriminos" caem de cima da tela, e o jogador deve movê-las e rotacioná-las para formar linhas horizontais completas sem espaços. Quando uma linha é completada, ela desaparece, e o jogador ganha pontos. O jogo termina quando as peças se acumulam até o topo da tela.
-                    A simplicidade e a profundidade estratégica de Tetris o tornam incrivelmente viciante. O jogo exige habilidades rápidas de tomada de decisão e planejamento antecipado, desafiando os jogadores a pensar e agir rapidamente. Tetris foi inicialmente lançado para o computador Electronika 60, mas ganhou popularidade global quando foi lançado para o Game Boy da Nintendo em 1989.
-                </p>
-                <img src="MIDIA/tetris.png" alt="Jogo Tetris" class="jogos__img">
-            </article>
+        <article class="game-article">
+            <h2>Bomberman</h1>
+            <img class="game-img--left" src="MIDIA/bomberman.png" alt="Jogo Bomberman" class="jogos__img">
+            <p class="game-article__paragraph">
+                <strong>Bomberman</strong>, criado pela <strong>Hudson Soft</strong> e lançado em <strong>1983</strong>, 
+                é um jogo de ação e labirinto que se tornou um clássico dos videogames. O jogador controla o personagem 
+                principal,<strong>Bomberman</strong>, cuja missão é colocar bombas para destruir <strong>obstáculos e 
+                inimigos</strong> dentro de um labirinto, buscando a saída para avançar ao próximo nível. As bombas têm 
+                um alcance explosivo específico e, além de eliminar inimigos, podem destruir <strong>blocos</strong> 
+                que frequentemente escondem <strong>power-ups</strong>. Esses power-ups podem aumentar o poder da 
+                explosão, a quantidade de bombas que podem ser colocadas simultaneamente, ou fornecer outras 
+                <strong>habilidades especiais</strong>.
+                <br><br>
+                A série Bomberman é conhecida por seu modo <strong>multijogador</strong>, onde os jogadores competem 
+                entre si em arenas cheias de <strong>obstáculos e power-ups</strong>, adicionando um elemento de 
+                estratégia e competição intensa. Com sua jogabilidade simples, mas profundamente estratégica, Bomberman 
+                conquistou uma base de fãs dedicada e gerou numerosas sequências e adaptações para diversas plataformas 
+                de jogos ao longo das décadas.
+            </p>
+        </article>
 
-            <article class="info-articles__topic">
-                <h2>Campo Minado </h1>
-                <p class="topic__paragraph">
-                    Campo Minado (Minesweeper), lançado pela Microsoft em 1990, é um jogo de lógica e estratégia que se tornou um clássico nos sistemas operacionais Windows. O objetivo do jogo é revelar todas as células de uma grade sem explodir as minas escondidas. Cada célula pode conter uma mina ou um número indicando quantas minas adjacentes estão presentes. O jogador usa essas dicas numéricas para deduzir a localização das minas e evitar clicar nelas. 
-                    A jogabilidade simples, mas desafiadora, de Campo Minado exige raciocínio lógico e uma abordagem meticulosa. O jogo tem vários níveis de dificuldade, variando de principiante a especialista, com grades maiores e mais minas nas configurações mais difíceis. Campo Minado se popularizou por ser pré-instalado em muitas versões do Windows, tornando-se acessível a milhões de usuários em todo o mundo.
-                </p>
-                <img src="MIDIA/campo minado.png" alt="Jogo Campo Minado" class="jogos__img">
-            </article>
-        </section>
+        <article class="game-article">
+            <h2>Tetris</h1>
+            <img class="game-img--rigth" src="MIDIA/tetris.png" alt="Jogo Tetris" class="jogos__img">
+            <p class="game-article__paragraph">
+                <strong>Tetris</strong>, criado pelo engenheiro de software russo <strong>Alexey Pajitnov</strong> em 
+                <strong>1984</strong>, é um dos jogos de <strong>quebra-cabeça</strong> mais famosos e duradouros de 
+                todos os tempos. No jogo, peças de formatos variados chamadas <strong>"tetriminos"</strong> caem de 
+                cima da tela, e o jogador deve <strong>movê-las e rotacioná-las</strong> para formar linhas horizontais 
+                completas sem espaços. Quando uma linha é completada, ela desaparece, e o jogador ganha pontos. O jogo 
+                termina quando as peças se <strong>acumulam até o topo da tela</strong>.
+                <br><br>
+                A simplicidade e a profundidade estratégica de Tetris o tornam incrivelmente viciante. O jogo exige 
+                <strong>habilidades rápidas</strong> de tomada de decisão e <strong>planejamento antecipado</strong>, 
+                desafiando os jogadores a pensar e agir rapidamente. Tetris foi inicialmente lançado para o computador 
+                <strong>Electronika 60</strong>, mas ganhou popularidade global quando foi lançado para o 
+                <strong>Game Boy da Nintendo em 1989</strong>.
+            </p>
+        </article>
+
+        <article class="game-article">
+            <h2>Campo Minado </h1>
+            <img class="game-img--left" src="MIDIA/campo minado.png" alt="Jogo Campo Minado" class="jogos__img">
+            <p class="game-article__paragraph">
+                <strong>Campo Minado (Minesweeper)</strong>, lançado pela <strong>Microsoft</strong> em 
+                <strong>1990</strong>, é um jogo de <strong>lógica e estratégia</strong> que se tornou um clássico nos 
+                sistemas operacionais Windows. O objetivo do jogo é <strong>revelar todas as células</strong> de uma 
+                grade sem <strong>explodir</strong> as <strong>minas</strong> escondidas. Cada célula pode conter uma 
+                <strong>mina</strong> ou um <strong>número indicando quantas minas adjacentes estão presentes</strong>. 
+                O jogador usa essas dicas numéricas para deduzir a localização das minas e evitar clicar nelas. 
+                <br><br>
+                A jogabilidade simples, mas desafiadora, de Campo Minado exige <strong>raciocínio lógico</strong> e uma 
+                <strong>abordagem meticulosa</strong>. O jogo tem vários níveis de dificuldade, variando de principiante 
+                a especialista, com grades <strong>maiores</strong> e mais minas nas configurações mais difíceis. 
+                Campo Minado se popularizou por ser pré-instalado em muitas versões do Windows, tornando-se acessível a 
+                milhões de usuários em todo o mundo.
+            </p>
+        </article>
     </main>
     
     <aside><p>jogue campo minado</p></aside>

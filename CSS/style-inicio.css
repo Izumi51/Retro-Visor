@@ -7,6 +7,8 @@
     --black: #000000;
     --black-blue: #141a22;
     --purple-blue: #1C0E42;
+    --dark-desaturated-blue: #2c3e50;
+    --button-background: #F2F2F2;
 
     /*------font size------*/
     --large: 1.8rem;
@@ -160,16 +162,11 @@ body
     color: var(--dark-orange);
 }
 
-.jogos__img
-{
-    height: 100px;
-}
-
 /*------quiz------*/
 #form-box
 {
-    background-color: var(--purple-blue);
-    max-width: 600px;
+    background-color: var(--dark-desaturated-blue);
+    max-width: 700px;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -201,13 +198,63 @@ legend
 
 .quiz-quest
 {
-    margin-top: 5px;
+    font-style: italic;
+    font-size: var(--medium);
 }
 
+input
+{
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.button-display
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+button
+{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: var(--medium);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+#button__submit
+{
+    background-color: var(--dark-orange);
+    border: 3px solid var(--dark-orange);
+}
+
+#button__submit:hover
+{
+    transition: 0.5s;
+    background-color: var(--button-background);
+    border: 3px solid var(--dark-orange);
+    color: var(--dark-orange);
+}
+
+#button__rest
+{
+    background-color: var(--purple-blue);
+    border: 3px solid var(--purple-blue);
+}
+
+#button__rest:hover
+{
+    transition: 0.5s;
+    background-color: var(--button-background);
+    border: 3px solid var(--purple-blue);
+    color: var(--purple-blue);
+}
 
 /*------FOOTER------*/
 footer
 {
-    background-color: var(--purple-blue);
+    background-color: var(--dark-orange);
     height: 100px;
+    margin-top: 40px;
 }
