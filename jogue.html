@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/style-jogue.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/global.css">
-    <script type="text/javascript" src="script.js">
-    </script> -->
-    <title>Jogue Aqui</title>
+    <title>Campo Minado</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img src="https://fakeimg.pl/200x200" alt="">
-            <ul>
-                <li><a href="inicio.html">Home</a></li>
-                <li><a href="jogos.html">Personagens</a></li>
-                <li><a href="jogue.html">Regras</a></li>
+    <header id="HeaderPag">
+        <section>
+            <img src="MIDIA/logo-retro.png" alt="Logo do site">
+            <h1>Retro Visor</h1>
+        </section>
+        <nav id="HeaderPag__Nav">
+            <ul id="Nav__list">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="jogue.html">Joque Aqui!</a></li>
             </ul>
         </nav>
     </header>
 
-    <main></main>
+    <main class="game-section">
+        <section class="game__display">
+            <h1>Campo Minado</h1>
+        </section>
+
+        <section class="game__instructions">
+            <h1>Regras do Campo Minado</h1>
+            <p>Campo Minado é um jogo de raciocínio onde o objetivo é encontrar todas as minas escondidas no campo de 
+                jogo sem detoná-las. Aqui estão as regras básicas:
+            </p>
+            <ul>
+                <li>O campo de jogo é uma <strong>grade de células</strong>.</li>
+                <li>Algumas células contêm <strong>minas (bombas)</strong> e outras estão <strong>vazias</strong>.</li>
+                <li>O jogador pode clicar em qualquer célula da grade.</li>
+                <li>Se o jogador clicar em uma célula contendo uma <strong>mina</strong>, o <strong>jogo termina</strong>.</li>
+                <li>Se o jogador clicar em uma célula <strong>vazia</strong>, ela revelará um número que indica <strong>quantas minas estão nas células adjacentes</strong>.</li>
+                <li>O jogador pode usar esses números para deduzir a localização das minas e evitar clicar nelas.</li>
+                <li>O jogador pode <strong>marcar</strong> células que ele acredita conterem minas para evitar clicar nelas acidentalmente.</li>
+                <li>O jogo é vencido quando <strong>todas as células sem minas são reveladas</strong>.</li>
+            </ul>
+            <h3><strong>Boa sorte e divirta-se jogando Campo Minado!</strong></h3> 
+        </section>
+    </main>
 
     <footer> 
-        <p>Texto</p>
-        <p>Texto</p>
-        <p>Texto</p>
+        <section class="footer-sections">
+            <h2>Nos Contate</h2>
+            <ul class="footer__list">
+                <li>Instagram @retroVisor_Games</li>
+                <li>Facebook @retroVisor_Games</li>
+                <li>Whatsapp +55 (21)92876-3467</li>
+            </ul>
+        </section>
+
+        <section class="footer-sections">
+            <h2>Confira</h2>
+            <ul class="footer__list">
+                <li><a href="jogue.html">Campo Minado</a></li>
+                <li><a href="inicio.html">História dos Games</a></li>
+                <li><a href="jogos.html">Conheça Alguns Jogos</a></li>
+            </ul>
+        </section>
+        
+        <section class="footer-sections">
+            <img src="MIDIA/logo-retro.png" alt="logo do site">
+        </section>
     </footer>
 </body>
 </html>

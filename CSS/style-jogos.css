@@ -10,7 +10,6 @@
 
     /*------font size------*/
     --large: 1.8rem;
-    --medium__header: 1.3rem;
     --medium: 1.5rem;
     --small: 1.1rem;
 }
@@ -49,63 +48,12 @@ aside
     grid-area: aside;
 }
 
-/*------BODY------*/
-body
-{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*------HEADER------*/
-#HeaderPag
-{
-    font-family: inter;
-    background-color: var(--dark-orange);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#HeaderPag > section
-{
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-    color: var(--white);
-    font-size: var(--medium__header);
-}
-
-#HeaderPag > section img
-{
-    height: 70px;
-}
-
-#Nav__list
-{
-    list-style: none;
-    display: flex;
-    gap: 80px;
-}
-
-#Nav__list a
-{
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.2rem;
-}
-
-#Nav__list a:hover
-{
-    color: var(--black-blue);
-    font-size: 1.4rem;
-}
-
 /*------MAIN------*/
 main
 {
     max-width: 800px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 /*------articles------*/

@@ -1,11 +1,125 @@
-* {
+:root
+{
+    /*------background colors------*/
+    --orange: #ff9900;
+    --dark-orange: #ff4000;
+    --white: #ffffff;
+    --black-blue: #141a22
+
+    /*------font size------*/
+    --medium: 1.3rem;
+}
+
+/*-------Reset CSS Proprieties------*/
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html,
-  body {
+}
+
+html,
+body 
+{
     height: 100% !important;
-  }
-  
+}
+
+/*------BODY------*/
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*------HEADER------*/
+#HeaderPag
+{
+    font-family: inter;
+    background-color: var(--dark-orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#HeaderPag > section
+{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    color: var(--white);
+    font-size: var(--medium);
+}
+
+#HeaderPag > section img
+{
+    height: 70px;
+}
+
+#Nav__list
+{
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+#Nav__list a
+{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+#Nav__list a:hover
+{
+    color: var(--black-blue);
+    font-size: 1.4rem;
+}
+
+/*------FOOTER------*/
+footer
+{
+    height: 300px;
+    padding: 15px;
+    background-color: var(--orange);
+    color: var(--black-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.footer-sections > h2
+{
+    font-size: var(--medium);
+}
+
+.footer__list
+{
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer__list > li
+{
+    padding: 5px;
+    font-size: var(--small);
+}
+
+.footer__list a 
+{
+    text-decoration: none;
+    color: var(--black-blue);
+}
+
+.footer__list a:hover
+{
+    color: var(--white);
+}
+
+.footer-sections > img 
+{
+    height: 150px;
+}
