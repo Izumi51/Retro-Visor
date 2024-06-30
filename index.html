@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/style-inicio.css">
+    <script src="JS/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
@@ -16,7 +17,7 @@
         </section>
         <nav id="HeaderPag__Nav">
             <ul id="Nav__list">
-                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="jogos.html">Jogos</a></li>
                 <li><a href="jogue.html">Joque Aqui!</a></li>
             </ul>
@@ -93,78 +94,99 @@
         </div>
 
         <section id="form-box">
-            <form>
+            <form id="quizForm">
                 <fieldset>
                     <legend>QUIZ</legend>
-
-                    <label class="quiz-quest" for="pertunta1">1) Qual equipamento foi usado como tela para "Tennis for Two"?</label>
+            
+                    <!-- Pergunta 1 -->
+                    <div class="question-container" id="question1">
+                        <label class="quiz-quest" for="pergunta1">1) Qual equipamento foi usado como tela para "Tennis for Two"?</label>
+                        <br>
+                        <input type="radio" name="pergunta1" value="a" id="resCer1" required>
+                        <label for="resCer1">a) Osciloscópio analógico</label><br>
+            
+                        <input type="radio" name="pergunta1" value="errado" id="resErr1" required>
+                        <label for="resErr1">b) Televisão</label><br>
+            
+                        <input type="radio" name="pergunta1" value="errado" id="resErr2" required>
+                        <label for="resErr2">c) Monitor de computador</label>
+                        <p id="pHidden1" class="rest-resposta"></p>
+                    </div>
+            
                     <br>
-                        <input type="radio" name="pertunta1" value="certo" id="resErr1" required>
-                            <label for="resErr1">a) Osciloscópio analógico</label><br>
-
-                        <input type="radio" name="pertunta1" value="errado" id="resCer1" required>
-                            <label for="resCer1">b) Televisão</label><br>
-
-                        <input type="radio" name="pertunta1" value="errado" id="resErr2" required>
-                            <label for="resErr2">a) Monitor de computador</label>
-
+            
+                    <!-- Pergunta 2 -->
+                    <div class="question-container" id="question2">
+                        <label class="quiz-quest" for="pergunta2">2) Qual tecnologia o Magnavox Odyssey usava?</label>
+                        <br>
+                        <input type="radio" name="pergunta2" value="errado" id="resErr3" required>
+                        <label for="resErr3">a) Microprocessador</label><br>
+            
+                        <input type="radio" name="pergunta2" value="errado" id="resErr4" required>
+                        <label for="resErr4">b) Circuitos integrados</label><br>
+            
+                        <input type="radio" name="pergunta2" value="c" id="resCer2" required>
+                        <label for="resCer2">c) Transistores e diodos</label>
+                        <p id="pHidden2" class="rest-resposta"></p>
+                    </div>
+            
                     <br>
+            
+                    <!-- Pergunta 3 -->
+                    <div class="question-container" id="question3">
+                        <label class="quiz-quest" for="pergunta3">3) Como eram criadas as cores na tela do Odyssey?</label>
+                        <br>
+                        <input type="radio" name="pergunta3" value="a" id="resCer3" required>
+                        <label for="resCer3">a) Folhas de plástico coloridas</label><br>
+            
+                        <input type="radio" name="pergunta3" value="errado" id="resErr5" required>
+                        <label for="resErr5">b) Gráficos coloridos embutidos</label><br>
+            
+                        <input type="radio" name="pergunta3" value="errado" id="resErr6" required>
+                        <label for="resErr6">c) Filtros de luz integrados</label>
+                        <p id="pHidden3" class="rest-resposta"></p>
+                    </div>
+            
                     <br>
-                    <label class="quiz-quest" for="pertunta2">2) Qual tecnologia o Magnavox Odyssey usava?</label>
+            
+                    <!-- Pergunta 4 -->
+                    <div class="question-container" id="question4">
+                        <label class="quiz-quest" for="pergunta4">4) Como "Tennis for Two" influenciou a indústria de videogames?</label>
+                        <br>
+                        <input type="radio" name="pergunta4" value="errado" id="resErr7" required>
+                        <label for="resErr7">a) Foi amplamente distribuído e vendido</label><br>
+            
+                        <input type="radio" name="pergunta4" value="b" id="resCer4" required>
+                        <label for="resCer4">b) Mostrou que a tecnologia podia ser usada para entretenimento.</label><br>
+            
+                        <input type="radio" name="pergunta4" value="errado" id="resErr8" required>
+                        <label for="resErr8">c) Introduziu gráficos coloridos e som</label>
+                        <p id="pHidden4" class="rest-resposta"></p>
+                    </div>
+            
                     <br>
-                        <input type="radio" name="pertunta2" value="errado"  id="" required>
-                            <label for="">a) Microprocessador</label><br>
-
-                        <input type="radio" name="pertunta2" value="errado" id="" required>
-                            <label for="">b) Circuitos integrados</label><br>
-
-                        <input type="radio" name="pertunta2" value="certo" id="" required>
-                            <label for="">c) Transistores e diodos</label>
-
+            
+                    <!-- Pergunta 5 -->
+                    <div class="question-container" id="question5">
+                        <label class="quiz-quest" for="pergunta5">5) Qual acessório inovador o Odyssey introduziu?</label>
+                        <br>
+                        <input type="radio" name="pergunta5" value="errado" id="resErr9" required>
+                        <label for="resErr9">a) Controle remoto</label><br>
+            
+                        <input type="radio" name="pergunta5" value="b" id="resCer5" required>
+                        <label for="resCer5">b) Light gun</label><br>
+            
+                        <input type="radio" name="pergunta5" value="errado" id="resErr10" required>
+                        <label for="resErr10">c) Fone de ouvido</label>
+                        <p id="pHidden5" class="rest-resposta"></p>
+                    </div>
+            
                     <br>
-                    <br>
-                    <label class="quiz-quest" for="pertunta3">3) Como eram criadas as cores na tela do Odyssey?</label>
-                    <br>
-                        <input type="radio" name="pertunta3" value="certo" id="" required>
-                            <label for="">a) Folhas de plástico coloridas</label><br>
-
-                        <input type="radio" name="pertunta3" value="errado"  id="" required>
-                            <label for="">b) Gráficos coloridos embutidos</label><br>
-
-                        <input type="radio" name="pertunta3" value="errado" id="" required>
-                            <label for="">c) Filtros de luz integrados</label>
-
-                    <br>
-                    <br>
-                    <label class="quiz-quest" for="pertunta4">4) Como "Tennis for Two" influenciou a indústria de videogames?</label>
-                    <br>
-                        <input type="radio" name="pertunta4" value="errado"  id="" required>
-                            <label for="">a) Foi amplamente distribuído e vendido</label><br>
-
-                        <input type="radio" name="pertunta4" value="certo" id="" required>
-                            <label for="">b) Mostrou que a tecnologia podia ser usada para entretenimento.</label><br>
-
-                        <input type="radio" name="pertunta4" value="errado" id="" required>
-                            <label for="">c) Introduziu gráficos coloridos e som</label>
-
-                    <br>
-                    <br>
-                    <label class="quiz-quest" for="pertunta5">5) Qual acessório inovador o Odyssey introduziu?</label>
-                    <br>
-                        <input type="radio" name="pertunta5" value="errado"  id="" required>
-                            <label for="">a) Controle remoto</label><br>
-
-                        <input type="radio" name="pertunta5" value="certo" id="" required>
-                            <label for="">b) Light gun</label><br>
-
-                        <input type="radio" name="pertunta5" value="errado" id="" required>
-                            <label for="">c) Fone de ouvido</label>
-
-                    <br>
-                    <br>
+            
+                    <!-- Botões para corrigir e reiniciar -->
                     <div class="button-display">
-                        <button id="button__submit" type="submit" value="submit">CORRIGIR</button>
-                        <button id="button__rest" type="reset" value="rest">REINICIAR</button>
+                        <button id="button__submit" type="button" onclick="verificarTodas()">CORRIGIR</button>
+                        <button id="button__rest" type="reset" value="reset" onclick="resestFormChanges()">REINICIAR</button>
                     </div>
                 </fieldset>
             </form>
@@ -185,7 +207,7 @@
             <h2>Confira</h2>
             <ul class="footer__list">
                 <li><a href="jogue.html">Campo Minado</a></li>
-                <li><a href="inicio.html">História dos Games</a></li>
+                <li><a href="index.html">História dos Games</a></li>
                 <li><a href="jogos.html">Conheça Alguns Jogos</a></li>
             </ul>
         </section>
