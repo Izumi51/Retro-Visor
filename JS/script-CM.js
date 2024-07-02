@@ -176,5 +176,6 @@ function fimDeJogo() {
         mostrarBombas(); // Mostra todas as bombas
         tabela.onclick = undefined; // Desativa os eventos de clique
         tabela.oncontextmenu = undefined; // Desativa os eventos de clique direito
+        alert("Você ganhou!"); // Exibe uma mensagem de vitoria
     }
 }
